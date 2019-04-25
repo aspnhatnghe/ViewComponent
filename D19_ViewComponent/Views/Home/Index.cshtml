@@ -1,0 +1,6 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+View Home/Index
+@await Component.InvokeAsync("CategoryMenu",
+    new { n = 11, ten = "Nguyễn Tèo"})

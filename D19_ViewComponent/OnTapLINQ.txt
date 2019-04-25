@@ -1,0 +1,25 @@
+Ôn l?i LINQ
+1/ Thêm/xóa/s?a
+--Thêm
+context.Add(obj);
+context.SaveChange();
+
+--S?a
+context.Update(obj);
+context.SaveChange();
+
+--Xóa
+context.Remove(obj);
+context.SaveChange();
+
+2/ Tìm ki?m theo di?u ki?n
+<mang>.Where(p => p.X == A && p.Y < C || p.Z = "X")
+
+L?y (SELECT)
+<mang>.Select(p => p.FieldA)
+<mang>.Select(p => new XYZ{p.X, p.Y})
+<mang>.Select(p => new {p.X, p.Y})
+
+---Lab16
+3/ S?p x?p, phân trang
+4/ Gom nhóm

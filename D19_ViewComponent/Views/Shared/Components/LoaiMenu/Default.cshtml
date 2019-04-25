@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Loai>
+
+<div class="list-group">
+    @foreach(var lo in Model)
+    {
+        <a class="list-group-item" asp-action="DanhSach" asp-controller="HangHoa">
+            <img src="~/Hinh/Loai/@lo.Hinh" height="20" />
+            @lo.TenLoai
+        </a>
+    }
+</div>
